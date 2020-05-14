@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Signatures</title>
+    <link rel="stylesheet" href="./assets/normalize.min.css" type="text/css" media="all">
+    <style>
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.panels {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.panel-secondary {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.field {
+  padding: 10px;
+}
+
+form {
+  max-width: 480px;
+  margin: auto;
+  padding: 5px;
+}
+
+label {
+  display: block;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+input {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #999; /* old IE */
+  background-color: #999; /* Modern Browsers */
+  margin: 4em 0;
+}
+
+.hint {
+  color: grey;
+  font-size: 0.825em;
+  font-style: italic;
+  padding: 0 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-here {
+  border: 2px dashed #999;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#html {
+  font-family: monospace;
+  overflow: scroll;
+  width: 100%;
+  height: 30%;
+}
+
+@media (min-width: 640px) {
+  .panels{
+    flex-direction: row;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="./dist/app.js"></script>
+  </body>
+</html>
